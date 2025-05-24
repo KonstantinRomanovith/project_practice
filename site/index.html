@@ -3,31 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная | Название проекта</title>
+    <title>Карьерные карты | Московский Политех</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О проекте</a></li>
-                <li><a href="team.html">Участники</a></li>
-                <li><a href="blog.html">Журнал</a></li>
-                <li><a href="resources.html">Ресурсы</a></li>
-            </ul>
-        </nav>
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Логотип Московского Политеха" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Участники</a></li>
+                    <li><a href="blog.html">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Карьерные карты</h1>
-            <p>Краткая аннотация: здесь описание целей и значимости проекта. Например, "Наш проект направлен на..."</p>
+            <div class="container">
+                <h1>Карьерные карты</h1>
+                <p class="subtitle">Проект, который поможет тебе определиться с будущей профессией и выбрать нужное направление подготовки в Московском Политехе</p>
+                <a href="https://mpu-career-card.github.io/frontend/" class="main-site-link" target="_blank">Перейти на основной сайт проекта</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-card">
+                    <img src="images/diagram.png" alt="Диаграмма профориентации">
+                    <h3>Актуальность проекта</h3>
+                    <ul>
+                        <li>Неэффективная система профориентации</li>
+                        <li>Трудности в выборе карьеры</li>
+                        <li>Недостаток информации о профессиях</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <img src="images/career-path.png" alt="Карьерный путь">
+                    <h3>Наши цели</h3>
+                    <p>Помощь в определении интересов и способностей, планировании обучения и профессионального развития</p>
+                </div>
+
+                <div class="feature-card">
+                    <img src="images/result.png" alt="Результаты">
+                    <h3>Цель проекта</h3>
+                    <p>Создание веб-страницы с карьерными картами для понимания профессий, навыков и перспектив</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-presentation">
+            <div class="container">
+                <h2>Видеопрезентация проекта</h2>
+                <div class="video-wrapper">
+                    <video controls poster="images/video-poster.jpg">
+                        <source src="videos/presentation.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Название проекта. Все права защищены.</p>
-    </footer>
 </body>
 </html>
